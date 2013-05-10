@@ -220,7 +220,7 @@ class WsgiApplicationContext(ApplicationContext):
         self.wsgi_file = wsgi_file or 'wsgi.py'
         self.wsgi_callable = wsgi_callable or 'app'
         self.requirements = requirements or 'requirements.txt'
-        self.virtualenv = '/home/%s/.virtualenv/%s' % (self.user, self.name)
+        self.virtualenvs = '/home/%s/.virtualenvs/%s' % (self.user, self.name)
         self.root_dir = '/home/%s/sites/%s' % (self.user, self.name)
         self.releases_dir = self.root_dir + '/releases'
         self.src_dir = self.releases_dir + '/current'
